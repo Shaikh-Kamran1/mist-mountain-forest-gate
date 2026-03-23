@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rooms & Stay at Mist Mountain Forest Gate – Comfortable forest cottages, dormitories, and tent camping near Nashik, Trimbakeshwar, Maharashtra." />
+  <meta name="keywords" content="rooms resort near Nashik, forest stay Maharashtra, cottage near Trimbakeshwar, camping near Mumbai, nature stay Ghoti" />
+  <title>Rooms & Stay | Mist Mountain Forest Gate</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { forest: '#2D5016', 'forest-light': '#3D6B2A', 'forest-dark': '#1A3009', earth: '#8B5E3C', beige: '#F5F0E8', gold: '#C9A84C' } } }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar" class="solid">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌲</div>
+      <div class="nav-logo-text">
+        <div class="name">Mist Mountain</div>
+        <div class="tagline">Forest Gate Resort</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="rooms.html" class="active">Rooms & Stay</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20at%20Mist%20Mountain%20Forest%20Gate" target="_blank" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="rooms.html">Rooms & Stay</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://wa.me/918261922889" target="_blank" class="mob-cta">📲 Book Now on WhatsApp</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="bg" style="background-image:url('images/about-main.jpg')"></div>
+  <div class="overlay"></div>
+  <div class="page-header-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Rooms & Stay</span></div>
+    <div class="hero-badge" style="margin-bottom:16px"><span class="dot"></span> Accommodation</div>
+    <h1>Rooms & Stay<br><em>Options</em></h1>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section-sm">
+  <div class="container text-center">
+    <div class="section-label" style="justify-content:center">Your Forest Home</div>
+    <h2 class="section-title" data-aos>Choose Your Perfect<br>Nature Retreat</h2>
+    <div class="divider center"></div>
+    <p class="section-desc mx-auto" data-aos data-aos-delay="100">
+      From romantic forest cottages to budget-friendly camping — we have the perfect stay option for
+      every traveler, group size, and budget. All stays include access to resort facilities.
+    </p>
+
+    <!-- Booking Notice -->
+    <div style="background:var(--beige);border:1.5px solid var(--gold);border-radius:var(--radius);padding:16px 24px;max-width:600px;margin:24px auto 0;display:flex;align-items:center;gap:12px" data-aos data-aos-delay="200">
+      <span style="font-size:24px">💡</span>
+      <p style="font-size:14px;color:var(--text-muted);text-align:left;line-height:1.6">
+        <strong style="color:var(--forest)">Pricing on request</strong> — Contact us directly for current rates, group discounts, and seasonal packages. Weekend slots fill up fast!
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS GRID -->
+<section class="section" style="padding-top:24px">
+  <div class="container">
+    <div class="rooms-grid">
+
+      <!-- Room 1: Forest Cottage -->
+      <div class="room-card" data-aos data-aos-delay="0">
+        <div class="room-img">
+          <img src="images/villa-promo.png" alt="Forest Cottage" loading="lazy" />
+          <span class="room-badge">Most Popular</span>
+        </div>
+        <div class="room-body">
+          <h3>Forest Cottage</h3>
+          <div class="room-meta">
+            <span>👥 2–4 Guests</span>
+            <span>🛏️ 1 Room</span>
+            <span>🚿 Private Bath</span>
+          </div>
+          <div class="room-amenities">
+            <span class="room-amenity">Forest View</span>
+            <span class="room-amenity">Private Patio</span>
+            <span class="room-amenity">Hot Water</span>
+            <span class="room-amenity">Meals Included</span>
+            <span class="room-amenity">Bonfire Access</span>
+          </div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:20px">
+            A cozy, well-furnished cottage nestled among the trees with a private sit-out.
+            Perfect for couples and small families wanting privacy and comfort in nature.
+          </p>
+          <div class="room-price">
+            <span class="price-label">Starting from</span>
+            <span class="price-value">₹2,500</span>
+            <span class="price-note">/ night (contact for rates)</span>
+          </div>
+          <a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20the%20Forest%20Cottage%20at%20Mist%20Mountain%20Forest%20Gate.%20Please%20share%20availability%20and%20pricing." target="_blank" class="btn-book">
+            📲 Book Forest Cottage
+          </a>
+        </div>
+      </div>
+
+      <!-- Room 2: Family Villa -->
+      <div class="room-card" data-aos data-aos-delay="100">
+        <div class="room-img">
+          <img src="images/hero.jpg" alt="Family Villa" loading="lazy" />
+          <span class="room-badge" style="background:var(--forest);color:white">Family Special</span>
+        </div>
+        <div class="room-body">
+          <h3>Family Villa</h3>
+          <div class="room-meta">
+            <span>👥 6–10 Guests</span>
+            <span>🛏️ 3 Rooms</span>
+            <span>🚿 2 Bathrooms</span>
+          </div>
+          <div class="room-amenities">
+            <span class="room-amenity">Mountain View</span>
+            <span class="room-amenity">Large Lawn</span>
+            <span class="room-amenity">Kitchen Access</span>
+            <span class="room-amenity">Hot Water</span>
+            <span class="room-amenity">Bonfire Space</span>
+            <span class="room-amenity">Meals Included</span>
+          </div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:20px">
+            A spacious villa with multiple bedrooms, a large open lawn for gatherings, and
+            stunning valley views. Ideal for family trips, cousin groups, and celebrations.
+          </p>
+          <div class="room-price">
+            <span class="price-label">Starting from</span>
+            <span class="price-value">₹6,000</span>
+            <span class="price-note">/ night (contact for rates)</span>
+          </div>
+          <a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20the%20Family%20Villa%20at%20Mist%20Mountain%20Forest%20Gate.%20Please%20share%20availability%20and%20pricing." target="_blank" class="btn-book">
+            📲 Book Family Villa
+          </a>
+        </div>
+      </div>
+
+      <!-- Room 3: Tent Camping -->
+      <div class="room-card" data-aos data-aos-delay="200">
+        <div class="room-img">
+          <img src="images/pool-night.jpg" alt="Tent Camping" loading="lazy" />
+          <span class="room-badge" style="background:#2c7a3e;color:white">Adventure Stay</span>
+        </div>
+        <div class="room-body">
+          <h3>Forest Tent Camping</h3>
+          <div class="room-meta">
+            <span>👥 1–3 Guests</span>
+            <span>⛺ Tent Provided</span>
+            <span>🚿 Shared Bath</span>
+          </div>
+          <div class="room-amenities">
+            <span class="room-amenity">Stargazing</span>
+            <span class="room-amenity">Bonfire</span>
+            <span class="room-amenity">Forest Sounds</span>
+            <span class="room-amenity">Sleeping Bag</span>
+            <span class="room-amenity">BBQ Option</span>
+          </div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:20px">
+            An authentic camping experience under the open sky. Fall asleep to the sounds of the
+            forest and wake up to misty mountain mornings. Perfect for adventure lovers.
+          </p>
+          <div class="room-price">
+            <span class="price-label">Starting from</span>
+            <span class="price-value">₹800</span>
+            <span class="price-note">/ person (contact for rates)</span>
+          </div>
+          <a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20Tent%20Camping%20at%20Mist%20Mountain%20Forest%20Gate.%20Please%20share%20availability%20and%20pricing." target="_blank" class="btn-book">
+            📲 Book Camping
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSIONS -->
+<section class="section bg-beige">
+  <div class="container">
+    <div class="text-center mb-12">
+      <div class="section-label" style="justify-content:center">What's Included</div>
+      <h2 class="section-title" data-aos>All Stays Include</h2>
+      <div class="divider center"></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px" class="includes-grid" data-aos>
+      <div style="background:white;border-radius:var(--radius);padding:24px;text-align:center;box-shadow:var(--shadow-sm)">
+        <div style="font-size:36px;margin-bottom:12px">🍽️</div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:6px">Meals</h4>
+        <p style="font-size:13px;color:var(--text-muted)">Home-cooked Maharashtra cuisine — breakfast & dinner</p>
+      </div>
+      <div style="background:white;border-radius:var(--radius);padding:24px;text-align:center;box-shadow:var(--shadow-sm)">
+        <div style="font-size:36px;margin-bottom:12px">🔥</div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:6px">Bonfire</h4>
+        <p style="font-size:13px;color:var(--text-muted)">Evening bonfire with music and stargazing</p>
+      </div>
+      <div style="background:white;border-radius:var(--radius);padding:24px;text-align:center;box-shadow:var(--shadow-sm)">
+        <div style="font-size:36px;margin-bottom:12px">🌲</div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:6px">Guided Trek</h4>
+        <p style="font-size:13px;color:var(--text-muted)">Morning nature walk and forest trail exploration</p>
+      </div>
+      <div style="background:white;border-radius:var(--radius);padding:24px;text-align:center;box-shadow:var(--shadow-sm)">
+        <div style="font-size:36px;margin-bottom:12px">🅿️</div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:6px">Free Parking</h4>
+        <p style="font-size:13px;color:var(--text-muted)">Safe, spacious parking for all vehicles</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING POLICIES -->
+<section class="section">
+  <div class="container" style="max-width:800px">
+    <div class="text-center mb-12">
+      <div class="section-label" style="justify-content:center">Important Info</div>
+      <h2 class="section-title" data-aos>Booking Policies</h2>
+      <div class="divider center"></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px" data-aos>
+      <div style="background:var(--beige);border-radius:var(--radius);padding:24px">
+        <h4 style="font-size:15px;font-weight:700;color:var(--forest);margin-bottom:12px">✅ Check-in / Check-out</h4>
+        <ul style="font-size:14px;color:var(--text-muted);line-height:2">
+          <li>Check-in: 12:00 PM onwards</li>
+          <li>Check-out: 11:00 AM</li>
+          <li>Early check-in subject to availability</li>
+        </ul>
+      </div>
+      <div style="background:var(--beige);border-radius:var(--radius);padding:24px">
+        <h4 style="font-size:15px;font-weight:700;color:var(--forest);margin-bottom:12px">💳 Payment</h4>
+        <ul style="font-size:14px;color:var(--text-muted);line-height:2">
+          <li>50% advance to confirm booking</li>
+          <li>Balance on arrival</li>
+          <li>UPI / Bank Transfer accepted</li>
+        </ul>
+      </div>
+      <div style="background:var(--beige);border-radius:var(--radius);padding:24px">
+        <h4 style="font-size:15px;font-weight:700;color:var(--forest);margin-bottom:12px">🚫 House Rules</h4>
+        <ul style="font-size:14px;color:var(--text-muted);line-height:2">
+          <li>No smoking inside rooms</li>
+          <li>Respect the natural surroundings</li>
+          <li>Quiet hours: 10 PM – 6 AM</li>
+        </ul>
+      </div>
+      <div style="background:var(--beige);border-radius:var(--radius);padding:24px">
+        <h4 style="font-size:15px;font-weight:700;color:var(--forest);margin-bottom:12px">🔄 Cancellation</h4>
+        <ul style="font-size:14px;color:var(--text-muted);line-height:2">
+          <li>Free cancellation 7 days before</li>
+          <li>50% refund 3–7 days before</li>
+          <li>No refund within 48 hours</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <p style="font-size:16px;color:var(--text-muted);margin-bottom:24px">
+        Questions about availability or group bookings? We're just a WhatsApp away!
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20a%20room%20at%20Mist%20Mountain%20Forest%20Gate." target="_blank" class="btn-whatsapp">💬 Chat on WhatsApp</a>
+        <a href="tel:+918261922889" class="btn-primary">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo"><div class="nav-logo-icon">🌲</div>
+        <div class="nav-logo-text"><div class="name" style="font-size:18px">Mist Mountain</div><div class="tagline">Forest Gate Resort</div></div>
+      </div>
+      <p>A serene nature resort near Trimbakeshwar, Nashik — Maharashtra's hidden weekend escape.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/918261922889" target="_blank" class="social-link">💬</a>
+        <a href="tel:+918261922889" class="social-link">📞</a>
+        <a href="https://maps.app.goo.gl/w8JgcHEa2PZQrDeo9" target="_blank" class="social-link">📍</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="rooms.html">Rooms</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Stay Types</h4><ul>
+      <li><a href="#">Forest Cottage</a></li><li><a href="#">Family Villa</a></li>
+      <li><a href="#">Tent Camping</a></li><li><a href="#">Group Bookings</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+      <li><a href="tel:+918261922889">📞 +91 82619 22889</a></li>
+      <li><a href="https://wa.me/918261922889" target="_blank">💬 WhatsApp Us</a></li>
+      <li><a href="https://maps.app.goo.gl/w8JgcHEa2PZQrDeo9" target="_blank">📍 Get Directions</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Mist Mountain Forest Gate. All rights reserved.</span>
+    <span>Designed with 🌿 for nature lovers</span>
+  </div>
+</footer>
+
+<div class="float-btns">
+  <a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20a%20room%20at%20Mist%20Mountain%20Forest%20Gate." target="_blank" class="float-wa">💬 <span class="label">Book Now</span></a>
+  <a href="tel:+918261922889" class="float-call">📞 <span class="label">Call Us</span></a>
+</div>
+
+<script src="js/main.js"></script>
+<style>
+  @media (max-width: 700px) {
+    .includes-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+  @media (max-width: 480px) {
+    .includes-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+</body>
+</html>

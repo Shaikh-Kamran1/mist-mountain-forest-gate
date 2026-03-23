@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photo Gallery – Mist Mountain Forest Gate. See our forest resort, rooms, bonfire areas, nature trails and scenic surroundings near Nashik, Maharashtra." />
+  <meta name="keywords" content="forest resort photos Maharashtra, nature resort gallery Nashik, resort near Trimbakeshwar pictures" />
+  <title>Gallery | Mist Mountain Forest Gate</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { forest: '#2D5016', 'forest-light': '#3D6B2A', 'forest-dark': '#1A3009', earth: '#8B5E3C', beige: '#F5F0E8', gold: '#C9A84C' } } }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar" class="solid">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌲</div>
+      <div class="nav-logo-text">
+        <div class="name">Mist Mountain</div>
+        <div class="tagline">Forest Gate Resort</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="rooms.html">Rooms & Stay</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20at%20Mist%20Mountain%20Forest%20Gate" target="_blank" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="rooms.html">Rooms & Stay</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://wa.me/918261922889" target="_blank" class="mob-cta">📲 Book Now on WhatsApp</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="bg" style="background-image:url('images/pool-valley.jpg')"></div>
+  <div class="overlay"></div>
+  <div class="page-header-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Gallery</span></div>
+    <div class="hero-badge" style="margin-bottom:16px"><span class="dot"></span> Photo Gallery</div>
+    <h1>The Beauty of<br><em>Mist Mountain</em></h1>
+  </div>
+</div>
+
+<!-- GALLERY INTRO -->
+<section class="section-sm">
+  <div class="container text-center">
+    <div class="section-label" style="justify-content:center">Visual Journey</div>
+    <h2 class="section-title" data-aos>A Glimpse Into Your<br>Forest Escape</h2>
+    <div class="divider center"></div>
+    <p class="section-desc mx-auto" data-aos data-aos-delay="100">
+      From misty mornings to bonfire nights — every moment at Mist Mountain Forest Gate
+      is picture-perfect. Click on any photo to view it in full size.
+    </p>
+
+    <!-- Filter Tabs -->
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px" data-aos data-aos-delay="200">
+      <button class="filter-btn active-filter" data-filter="all" onclick="filterGallery(this,'all')">All Photos</button>
+      <button class="filter-btn" data-filter="nature" onclick="filterGallery(this,'nature')">Nature & Forest</button>
+      <button class="filter-btn" data-filter="rooms" onclick="filterGallery(this,'rooms')">Rooms & Stay</button>
+      <button class="filter-btn" data-filter="outdoor" onclick="filterGallery(this,'outdoor')">Outdoor & Bonfire</button>
+      <button class="filter-btn" data-filter="views" onclick="filterGallery(this,'views')">Scenic Views</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY GRID -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="gallery-page-grid" id="gallery-grid">
+
+      <!-- Nature & Forest -->
+      <div class="gallery-page-item wide" data-category="nature" data-lightbox data-aos>
+        <img src="images/hero.jpg" alt="Dense forest at Mist Mountain" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="nature" data-lightbox data-aos>
+        <img src="images/misty-forest.jpg" alt="Forest canopy" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="nature" data-lightbox data-aos>
+        <img src="images/villa-mountain.jpg" alt="Tropical forest" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="views" data-lightbox data-aos>
+        <img src="images/pool-terrace.jpg" alt="Mountain sunrise views" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="nature" data-lightbox data-aos>
+        <img src="images/pool-valley.jpg" alt="Waterfall near resort" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+
+      <!-- Rooms & Stay -->
+      <div class="gallery-page-item wide" data-category="rooms" data-lightbox data-aos>
+        <img src="images/villa-promo.png" alt="Cozy forest cottage interior" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="rooms" data-lightbox data-aos>
+        <img src="images/about-accent.jpg" alt="Resort room" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="rooms" data-lightbox data-aos>
+        <img src="images/villa-night.jpg" alt="View from room window" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="rooms" data-lightbox data-aos>
+        <img src="images/about-main.jpg" alt="Resort accommodation" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+
+      <!-- Outdoor & Bonfire -->
+      <div class="gallery-page-item wide" data-category="outdoor" data-lightbox data-aos>
+        <img src="images/pool-night.jpg" alt="Bonfire night at the resort" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="outdoor" data-lightbox data-aos>
+        <img src="images/villa-steps.jpg" alt="Nature trail trekking" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="outdoor" data-lightbox data-aos>
+        <img src="images/villa-mountain.jpg" alt="Outdoor camping" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+
+      <!-- Scenic Views -->
+      <div class="gallery-page-item" data-category="views" data-lightbox data-aos>
+        <img src="images/pool-valley.jpg" alt="Mist Mountain pool and valley" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item" data-category="views" data-lightbox data-aos>
+        <img src="images/pool-terrace.jpg" alt="Mountain panorama" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-page-item wide" data-category="views" data-lightbox data-aos>
+        <img src="images/misty-forest.jpg" alt="Sahyadri forest panorama" loading="lazy" />
+        <div class="gallery-page-overlay"><span>🔍</span></div>
+      </div>
+
+    </div>
+
+    <!-- No results message -->
+    <div id="no-results" style="display:none;text-align:center;padding:48px;color:var(--text-muted)">
+      <div style="font-size:48px;margin-bottom:16px">🌿</div>
+      <p>No photos in this category yet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2 class="font-display" data-aos>Liked What You Saw?<br><em>Come Experience it Live!</em></h2>
+    <div class="divider center" style="background:var(--gold)"></div>
+    <p data-aos data-aos-delay="100">Pictures don't do justice to the real magic of Mist Mountain Forest Gate.</p>
+    <div class="cta-actions" data-aos data-aos-delay="200">
+      <a href="https://wa.me/918261922889?text=Hello!%20I%20saw%20your%20gallery%20and%20want%20to%20book%20a%20stay%20at%20Mist%20Mountain%20Forest%20Gate." target="_blank" class="btn-whatsapp">💬 Book Your Stay</a>
+      <a href="rooms.html" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.5)">View Room Options</a>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">✕</span>
+  <span class="lightbox-nav prev" id="lightbox-prev">‹</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Gallery image" />
+  <span class="lightbox-nav next" id="lightbox-next">›</span>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo"><div class="nav-logo-icon">🌲</div>
+        <div class="nav-logo-text"><div class="name" style="font-size:18px">Mist Mountain</div><div class="tagline">Forest Gate Resort</div></div>
+      </div>
+      <p>A serene nature resort near Trimbakeshwar, Nashik — Maharashtra's hidden weekend escape.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/918261922889" target="_blank" class="social-link">💬</a>
+        <a href="tel:+918261922889" class="social-link">📞</a>
+        <a href="https://maps.app.goo.gl/w8JgcHEa2PZQrDeo9" target="_blank" class="social-link">📍</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="rooms.html">Rooms</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Experiences</h4><ul>
+      <li><a href="#">Forest Trekking</a></li><li><a href="#">Bonfire Nights</a></li>
+      <li><a href="#">Bird Watching</a></li><li><a href="#">Sunrise Walks</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+      <li><a href="tel:+918261922889">📞 +91 82619 22889</a></li>
+      <li><a href="https://wa.me/918261922889" target="_blank">💬 WhatsApp Us</a></li>
+      <li><a href="https://maps.app.goo.gl/w8JgcHEa2PZQrDeo9" target="_blank">📍 Get Directions</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Mist Mountain Forest Gate. All rights reserved.</span>
+    <span>Designed with 🌿 for nature lovers</span>
+  </div>
+</footer>
+
+<div class="float-btns">
+  <a href="https://wa.me/918261922889?text=Hello!%20I%20want%20to%20book%20at%20Mist%20Mountain%20Forest%20Gate." target="_blank" class="float-wa">💬 <span class="label">Book Now</span></a>
+  <a href="tel:+918261922889" class="float-call">📞 <span class="label">Call Us</span></a>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  /* Gallery Filter */
+  function filterGallery(btn, category) {
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active-filter'));
+    btn.classList.add('active-filter');
+
+    const items = document.querySelectorAll('#gallery-grid [data-category]');
+    let visible = 0;
+    items.forEach(item => {
+      if (category === 'all' || item.dataset.category === category) {
+        item.style.display = '';
+        visible++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+  }
+</script>
+
+<style>
+  .filter-btn {
+    padding: 9px 20px;
+    border-radius: 50px;
+    font-size: 13px; font-weight: 600;
+    border: 1.5px solid var(--beige-dark);
+    background: var(--white);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .filter-btn:hover { border-color: var(--forest); color: var(--forest); }
+  .filter-btn.active-filter { background: var(--forest); color: var(--white); border-color: var(--forest); }
+</style>
+</body>
+</html>
